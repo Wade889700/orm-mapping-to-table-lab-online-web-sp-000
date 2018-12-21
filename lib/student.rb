@@ -21,9 +21,9 @@ class Student
   end
 
   def self.drop_table
-    sql = <<-SQL 
-    DOP TABLE students 
-    SQL 
+    sql = <<-SQL
+    DOP TABLE students
+    SQL
 
     DB[:conn].execute(sql)
   end
